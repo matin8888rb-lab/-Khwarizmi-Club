@@ -65,3 +65,94 @@ body[dir=rtl] .voices-list li:before{margin-right:0;margin-left:12px}
   .voices-quote{max-width:100%}
   body[dir=rtl] .case-stamp{right:auto;left:20px}
 }
+
+
+/* KHORAZMI CLUB — responsive horizontal editorial experience */
+:root{--paper:#f7f5ef;--ink:#10182b;--electric:#315df5;--acid:#d2f477}
+html,body{height:100%;overscroll-behavior:none}
+body{background:var(--paper)}
+.site-header{height:76px;padding-inline:clamp(18px,4vw,64px);background:rgba(247,245,239,.94)}
+.desktop-nav{gap:clamp(12px,1.8vw,27px)}
+.desktop-nav a{font-size:11px;white-space:nowrap}
+.page.active{height:calc(100svh - 76px);min-height:0;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:rgba(49,93,245,.35) transparent;display:flex;align-items:stretch}
+.page.active>*{flex:0 0 100%;width:100%;min-width:0;height:100%;min-height:0;overflow-y:auto;overflow-x:hidden;scroll-snap-align:start;scrollbar-width:thin;scrollbar-color:rgba(49,93,245,.25) transparent}
+.page.active>.site-footer{height:auto;min-height:100%;overflow:visible}
+#home.active{display:flex;flex-direction:row}
+#home>.hero{min-height:100%;height:100%;padding:clamp(28px,5vh,60px) clamp(28px,8vw,120px);grid-template-columns:1.05fr .95fr}
+#home>.ticker{height:100%;display:grid;place-items:center;writing-mode:vertical-rl;white-space:normal;padding:30px 0}
+#home>.ticker .ticker-track{animation:marqueeVertical 28s linear infinite}
+#home>.ticker .ticker-track span{min-width:0;min-height:200%;writing-mode:vertical-rl}
+@keyframes marqueeVertical{to{transform:translateY(-50%)}}
+#home>.intro-section,#home>.feature-section{height:100%;min-height:100%;display:flex;flex-direction:column;justify-content:center;padding:clamp(28px,6vh,70px) clamp(28px,8vw,120px)}
+#home>.feature-section{padding-top:clamp(28px,5vh,60px)}
+#home>.quote-band{height:100%;display:flex;flex-direction:column;justify-content:center}
+#home>.site-footer{height:100%;min-height:100%;flex-wrap:wrap;align-content:center;gap:28px;padding:clamp(28px,8vw,100px)}
+.subpage.active{padding:clamp(25px,5vh,58px) clamp(24px,7vw,100px);gap:clamp(22px,4vw,60px)}
+.subpage.active>.subpage-head{flex:0 0 38%;width:38%;max-width:none;align-self:center}
+.subpage.active>.subpage-head h1{font-size:clamp(43px,5.2vw,76px);letter-spacing:-2px;margin:18px 0}
+.subpage.active>.subpage-head>p{max-width:430px}
+.subpage.active>:not(.subpage-head){flex:0 0 58%;width:58%;align-self:center}
+.subpage.active>.privacy-note,.subpage.active>.small-print{flex-basis:58%;width:58%}
+.subpage.active>.editorial-feature{min-height:0;height:min(62vh,500px);margin-top:0}
+.subpage.active>.lab-panel{max-width:none;margin-top:0;padding:clamp(22px,3vw,42px)}
+.subpage.active>.lab-note{max-width:none;grid-template-columns:1fr;gap:12px}
+.subpage.active>.debate-card{max-width:none;margin-top:0;padding:clamp(25px,4vw,48px)}
+.subpage.active>.event-empty{margin-top:0;min-height:60vh;padding:25px}
+.subpage.active>.join-layout{max-width:none;margin-top:0;min-height:55vh}
+.subpage.active>.about-copy{margin-top:0}
+.subpage.active>.hall-intro{margin:0 0 18px}
+.subpage.active>.honour-grid{max-width:none}
+.subpage.active>.mystery-card{max-width:none;margin-top:0}
+.subpage.active>.word-corner{max-width:none;margin-top:0}
+.subpage.active>.voices-layout{max-width:none;margin-top:0}
+.subpage.active>.global-grid{max-width:none;margin-top:0}
+body[dir=rtl] .subpage.active{direction:rtl}
+body[dir=rtl] .subpage.active>.subpage-head{text-align:right}
+body[dir=rtl] .desktop-nav{direction:rtl}
+.lang-toggle{border:1px solid var(--line);border-radius:999px;padding:10px 13px;background:rgba(255,255,255,.55)}
+.button,.join-link,.feature,.quiz-option{border-radius:3px}
+.feature{box-shadow:0 14px 34px rgba(16,24,43,.045)}
+.feature:hover{box-shadow:0 22px 48px rgba(16,24,43,.10)}
+.hero-art{filter:saturate(1.06)}
+.subpage-head .section-kicker,.section-kicker{letter-spacing:1.5px}
+@media(max-width:850px){
+ .desktop-nav{gap:10px}.desktop-nav a{font-size:9px}
+ .subpage.active>.subpage-head{flex-basis:34%;width:34%}
+ .subpage.active>:not(.subpage-head){flex-basis:62%;width:62%}
+ #home>.hero{padding-inline:5vw}
+}
+@media(max-width:620px){
+ .site-header{height:66px;padding:0 16px}
+ .page.active{height:calc(100svh - 66px)}
+ #home.active{display:flex}
+ #home>.hero{height:100%;min-height:100%;padding:28px 22px;justify-content:center}
+ #home>.hero .hero-art{height:32vh;min-height:190px;margin:0}
+ #home>.hero h1{font-size:clamp(43px,12vw,66px);margin:18px 0}
+ #home>.hero .hero-foot{margin-top:22px}
+ #home>.ticker{min-width:54px;flex-basis:54px}
+ #home>.intro-section,#home>.feature-section{padding:28px 22px}
+ #home>.feature-section .feature-grid{grid-template-columns:1fr 1fr;gap:8px}
+ #home>.feature-section .feature{min-height:0;height:53vh;padding:12px}
+ #home>.feature-section .feature-graphic,#home>.feature-section .lab-graphic,#home>.feature-section .debate-graphic{height:23vh}
+ #home>.feature-section .feature-bottom h3{font-size:18px}
+ #home>.feature-section .feature-bottom p{font-size:9px}
+ #home>.feature-section .quick-discover{grid-template-columns:1fr 1fr}
+ #home>.quote-band{padding:35px 25px}
+ .subpage.active{padding:25px 20px;gap:18px}
+ .subpage.active>.subpage-head{flex-basis:76%;width:76%;align-self:center}
+ .subpage.active>.subpage-head h1{font-size:clamp(42px,11vw,62px);margin:15px 0}
+ .subpage.active>:not(.subpage-head){flex-basis:88%;width:88%;align-self:center}
+ .subpage.active>.privacy-note,.subpage.active>.small-print{flex-basis:88%;width:88%}
+ .subpage.active>.editorial-feature{height:auto;min-height:70vh;grid-template-columns:1fr}
+ .subpage.active>.editorial-feature .editorial-art{min-height:30vh}
+ .subpage.active>.editorial-feature .editorial-copy{padding:22px}
+ .subpage.active>.lab-panel{padding:22px 18px}
+ .subpage.active>.lab-note{display:none}
+ .subpage.active>.debate-card{padding:25px 20px}
+ .subpage.active>.join-layout{grid-template-columns:1fr;padding:25px 20px}
+ .subpage.active>.honour-grid{grid-template-columns:1fr 1fr}
+ .subpage.active>.honour-grid .honour-card{padding:16px;min-height:210px}
+ .subpage.active>.global-grid{grid-template-columns:1fr}
+ .subpage.active>.voices-layout{grid-template-columns:1fr;gap:18px}
+ .subpage.active>.word-corner{grid-template-columns:1fr;gap:10px}
+}
