@@ -1,4 +1,4 @@
-const CACHE = "khwarizmi-club-v3";
+const CACHE = "khwarizmi-club-v4";
 const APP_SHELL = [
   "./",
   "./index.html",
