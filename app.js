@@ -47,6 +47,7 @@
     const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
     const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);
     nodes.forEach(node=>{
+      if(node.parentElement?.closest("[data-en][data-fa]"))return;
       const raw=original.get(node)??node.nodeValue;
       if(!original.has(node))original.set(node,raw);
       const key=raw.trim();
@@ -68,6 +69,17 @@
     page.scrollTo({left:0,top:0,behavior:"instant"});
   }
   window.addEventListener("hashchange",showPage);showPage();
+  pages.forEach(page=>page.addEventListener("wheel",event=>{
+    if(Math.abs(event.deltaY)<=Math.abs(event.deltaX))return;
+    const panel=event.target.closest(":scope > *");
+    if(panel&&panel.scrollHeight>panel.clientHeight+8){
+      const canScrollDown=event.deltaY>0&&panel.scrollTop+panel.clientHeight<panel.scrollHeight-2;
+      const canScrollUp=event.deltaY<0&&panel.scrollTop>2;
+      if(canScrollDown||canScrollUp)return;
+    }
+    event.preventDefault();
+    page.scrollBy({left:event.deltaY,behavior:"auto"});
+  },{passive:false}));
   if(menuToggle&&nav)menuToggle.addEventListener("click",()=>{const open=nav.classList.toggle("open");menuToggle.setAttribute("aria-expanded",String(open))});
   langToggle.addEventListener("click",()=>{language=language==="en"?"fa":"en";localStorage.setItem("kc-language",language);translate()});
   translate();
