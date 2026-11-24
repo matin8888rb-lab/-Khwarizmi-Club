@@ -85,20 +85,9 @@
     if(!pages.some(p=>p.id===id))history.replaceState(null,"","#home");
     if(nav)nav.classList.remove("open");
     if(menuToggle)menuToggle.setAttribute("aria-expanded","false");
-    page.scrollTo({left:0,top:0,behavior:"instant"});
+    window.scrollTo({top:0,left:0,behavior:"instant"});
   }
   window.addEventListener("hashchange",showPage);showPage();
-  pages.forEach(page=>page.addEventListener("wheel",event=>{
-    if(Math.abs(event.deltaY)<=Math.abs(event.deltaX))return;
-    const panel=event.target.closest(":scope > *");
-    if(panel&&panel.scrollHeight>panel.clientHeight+8){
-      const canScrollDown=event.deltaY>0&&panel.scrollTop+panel.clientHeight<panel.scrollHeight-2;
-      const canScrollUp=event.deltaY<0&&panel.scrollTop>2;
-      if(canScrollDown||canScrollUp)return;
-    }
-    event.preventDefault();
-    page.scrollBy({left:event.deltaY,behavior:"auto"});
-  },{passive:false}));
   if(menuToggle&&nav)menuToggle.addEventListener("click",()=>{const open=nav.classList.toggle("open");menuToggle.setAttribute("aria-expanded",String(open))});
   langToggle.addEventListener("click",()=>{language=language==="en"?"fa":"en";localStorage.setItem("kc-language",language);translate()});
   translate();
