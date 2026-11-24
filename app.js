@@ -35,7 +35,26 @@
     "Ideas deserve":"ایده‌ها شایسته‌ی","a":"یک","platform.":"جایگاه‌اند.","What belongs here?":"چه چیزهایی اینجا جای دارند؟",
     "Book, film and game reviews":"نقد کتاب، فیلم و بازی","Short stories and creative writing":"داستان کوتاه و نوشته‌های خلاقانه","Thoughtful opinions with reasons":"دیدگاه‌های سنجیده همراه با دلیل","Interviews and school-life stories":"مصاحبه و روایت‌های زندگی مدرسه","Language-learning discoveries":"کشف‌های مربوط به یادگیری زبان",
     "Ask how to contribute ↗":"برای همکاری پرس‌وجو کن ↗","One world.":"یک جهان.","Many":"با","stories.":"داستان‌های بسیار.","Explore expressions, traditions and everyday life across cultures — with curiosity and respect.":"با کنجکاوی و احترام، اصطلاحات، سنت‌ها و زندگی روزمره‌ی فرهنگ‌های گوناگون را کشف کن.",
-    "Lost in translation?":"همه‌چیز در ترجمه پیدا می‌شود؟","Greetings matter.":"سلام و احوال‌پرسی مهم‌اند."
+    "Lost in translation?":"همه‌چیز در ترجمه پیدا می‌شود؟","Greetings matter.":"سلام و احوال‌پرسی مهم‌اند.",
+
+    "A little more about us":"کمی بیشتر درباره‌ی ما","01 / THE CLUB":"۰۱ / باشگاه","02 / FIND YOUR SPACE":"۰۲ / فضای مورد علاقه‌ات را پیدا کن",
+    "01 / READ":"۰۱ / مطالعه","02 / EXPERIMENT":"۰۲ / تجربه","03 / SPEAK":"۰۳ / گفت‌وگو","Stories, opinions & student voices.":"داستان‌ها، دیدگاه‌ها و صدای دانش‌آموزان.",
+    "Play with words. Test what you know.":"با واژه‌ها بازی کن و دانسته‌هایت را بیازمای.","Debate Arena":"میدان گفت‌وگو","Challenge ideas, not people.":"ایده‌ها را به چالش بکش، نه آدم‌ها را.","Student Voices":"صدای دانش‌آموزان","Global Corner":"گوشه‌ی جهان",
+    "A THOUGHT TO TAKE WITH YOU":"اندیشه‌ای برای همراه داشتن","“One language sets you in a corridor for life. Two languages open every door along the way.”":"«یک زبان تو را در راهرویی از زندگی قرار می‌دهد؛ دو زبان، درهای مسیر را به رویت می‌گشایند.»","— FRANK SMITH":"— فرانک اسمیت","© 2026 KHWARIZMI CLUB":"© ۲۰۲۶ خوارزمی کلاب",
+    "VOL. 01 — THE FIRST ISSUE":"شماره‌ی ۰۱ — نخستین شماره","EDITOR'S PICK · COMING SOON":"انتخاب سردبیر · به‌زودی","01 / THE STUDENT EDIT":"۰۱ / نشریه‌ی دانش‌آموزی",
+    "02 / EXPERIMENT · EXPLORE · IMPROVE":"۰۲ / تجربه · کشف · پیشرفت","03 / THINK OUT LOUD":"۰۳ / بلند فکر کن","to be":"به","challenged.":"چالش کشیده شوند.","04 / WHAT'S HAPPENING":"۰۴ / چه خبر؟","NEXT CHAPTER / 001":"فصل بعدی / ۰۰۱","05 / BE PART OF IT":"۰۵ / بخشی از ما باش",
+    "MEMBER":"عضو","ABOUT KHWARIZMI CLUB":"درباره‌ی خوارزمی کلاب","06 / CELEBRATING GROWTH":"۰۶ / جشن گرفتن پیشرفت","01 / CURIOSITY":"۰۱ / کنجکاوی","02 / CREATIVITY":"۰۲ / خلاقیت","03 / COURAGE":"۰۳ / شجاعت",
+    "For asking thoughtful questions and exploring ideas beyond the lesson.":"برای پرسیدن سؤال‌های سنجیده و کشف ایده‌هایی فراتر از درس.","For turning language into stories, projects, performances and original work.":"برای تبدیل زبان به داستان، پروژه، اجرا و آثار خلاقانه.","For sharing ideas, trying something new and helping others feel welcome.":"برای به‌اشتراک‌گذاشتن ایده‌ها، تجربه‌های تازه و همراه کردن دیگران.",
+    "07 / THINK · DECODE · DISCOVER":"۰۷ / فکر کن · رمزگشایی کن · کشف کن","Clues, wordplay and language puzzles. Read carefully — the answer is hiding in plain sight.":"سرنخ‌ها، بازی با کلمات و معماهای زبانی. با دقت بخوان؛ پاسخ درست جلوی چشم توست.",
+    "I have keys, but no locks. I have space, but no room. You can enter, but you cannot go outside. What am I?":"کلید دارم، اما قفل ندارم. فاصله دارم، اما اتاق نیستم. می‌توانی وارد شوی، اما نمی‌توانی از من بیرون بروی. من چه هستم؟",
+    "/ˌser.ənˈdɪp.ə.ti/ · noun":"/ˌser.ənˈdɪp.ə.ti/ · اسم","Example: Finding a brilliant book by accident was pure serendipity.":"مثال: پیدا کردن اتفاقی یک کتاب فوق‌العاده، نمونه‌ای از خوش‌اقبالی است.",
+    "08 / STUDENT VOICES":"۰۸ / صدای دانش‌آموزان","“Your perspective is the part no one else can write.”":"«دیدگاه تو بخشی از داستان است که هیچ‌کس جز خودت نمی‌تواند بنویسد.»",
+    "Submissions will be reviewed by the club editors before publication. Please do not include phone numbers, home addresses or other private information in a submission.":"نوشته‌ها پیش از انتشار توسط دبیران باشگاه بررسی می‌شوند. لطفاً شماره تلفن، نشانی خانه یا اطلاعات خصوصی را در نوشته‌ها قرار نده.",
+    "09 / GLOBAL CORNER":"۰۹ / گوشه‌ی جهان","LANGUAGE NOTE / 001":"نکته‌ی زبانی / ۰۰۱","Some expressions carry cultural meaning that a word-for-word translation cannot capture. Context is part of language.":"برخی اصطلاحات بار فرهنگی دارند و با ترجمه‌ی کلمه‌به‌کلمه منتقل نمی‌شوند. بافت و موقعیت بخشی از زبان است.",
+    "TRY THIS: What does “break the ice” really mean?":"امتحان کن: اصطلاح «break the ice» واقعاً چه معنایی دارد؟","TRAVEL THROUGH WORDS / 002":"سفر در دنیای واژه‌ها / ۰۰۲",
+    "Greetings can show respect, warmth, distance or familiarity. The right phrase depends on the person and the situation.":"سلام و احوال‌پرسی می‌تواند احترام، صمیمیت یا فاصله را نشان دهد. عبارت مناسب به شخص و موقعیت بستگی دارد.",
+    "THINK ABOUT: How do greetings change between formal and informal settings?":"فکر کن: احوال‌پرسی در موقعیت رسمی و غیررسمی چه تفاوتی دارد؟",
+    "THINK":"فکر کن","GLOBAL":"جهانی","SPEAK":"سخن بگو","BRAVE":"جسور باش","Aa":"الف‌ـ‌الف","THE":"","STUDENT":"دانش‌آموز","EDIT":"نشریه","TRY":"تلاش کن","REPEAT":"تکرار کن","YOUR":"تو","VOICE":"صدا","MATTERS.":"اهمیت دارد."
   };
   let language=localStorage.getItem("kc-language")==="fa"?"fa":"en";
   const original=new WeakMap();
