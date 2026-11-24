@@ -1,0 +1,14 @@
+{
+  "name": "Khwarizmi Club",
+  "short_name": "Khwarizmi",
+  "description": "Learn Beyond Limits. Speak Without Borders.",
+  "lang": "en",
+  "start_url": "./#home",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f2f0e8",
+  "theme_color": "#10182b",
+  "icons": [
+    {"src":"./assets/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}
