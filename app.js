@@ -56,7 +56,8 @@
     "THINK ABOUT: How do greetings change between formal and informal settings?":"فکر کن: احوال‌پرسی در موقعیت رسمی و غیررسمی چه تفاوتی دارد؟",
     "THINK":"فکر کن","GLOBAL":"جهانی","SPEAK":"سخن بگو","BRAVE":"جسور باش","Aa":"الف‌ـ‌الف","THE":"","STUDENT":"دانش‌آموز","EDIT":"نشریه","TRY":"تلاش کن","REPEAT":"تکرار کن","YOUR":"تو","VOICE":"صدا","MATTERS.":"اهمیت دارد."
   };
-  let language=localStorage.getItem("kc-language")==="fa"?"fa":"en";
+  let language="en";
+  try{language=localStorage.getItem("kc-language")==="fa"?"fa":"en"}catch(_){}
   const original=new WeakMap();
   function translate(){
     document.documentElement.lang=language;
@@ -89,7 +90,7 @@
   }
   window.addEventListener("hashchange",showPage);showPage();
   if(menuToggle&&nav)menuToggle.addEventListener("click",()=>{const open=nav.classList.toggle("open");menuToggle.setAttribute("aria-expanded",String(open))});
-  langToggle.addEventListener("click",()=>{language=language==="en"?"fa":"en";localStorage.setItem("kc-language",language);translate()});
+  if(langToggle)langToggle.addEventListener("click",()=>{language=language==="en"?"fa":"en";try{localStorage.setItem("kc-language",language)}catch(_){}translate()});
   translate();
   const options=[...document.querySelectorAll(".quiz-option")],feedback=document.getElementById("quizFeedback");
   options.forEach(option=>option.addEventListener("click",()=>{
