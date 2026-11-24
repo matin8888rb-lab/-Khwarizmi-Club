@@ -45,7 +45,26 @@
     options.forEach(o => { o.disabled = false; o.classList.remove("correct","wrong"); });
     feedback.textContent = "One answer is correct. Trust what you know.";
   });
+
+  // Check for published changes regularly and refresh open tabs when a new
+  // service worker takes control. This keeps visitors on the current release.
   if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
-    window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js").catch(() => {}));
+    window.addEventListener("load", async () => {
+      try {
+        const registration = await navigator.serviceWorker.register("./sw.js", {
+          updateViaCache: "none"
+        });
+        await registration.update().catch(() => {});
+        window.setInterval(() => registration.update().catch(() => {}), 120000);
+        let refreshing = false;
+        navigator.serviceWorker.addEventListener("controllerchange", () => {
+          if (refreshing) return;
+          refreshing = true;
+          window.location.reload();
+        });
+      } catch (_) {
+        // The public site remains usable if offline caching is unavailable.
+      }
+    });
   }
 })();
