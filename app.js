@@ -89,6 +89,7 @@
     window.scrollTo({top:0,left:0,behavior:"instant"});
   }
   window.addEventListener("hashchange",showPage);showPage();
+  document.documentElement.classList.add("js");
   if(menuToggle&&nav)menuToggle.addEventListener("click",()=>{const open=nav.classList.toggle("open");menuToggle.setAttribute("aria-expanded",String(open))});
   if(langToggle)langToggle.addEventListener("click",()=>{language=language==="en"?"fa":"en";try{localStorage.setItem("kc-language",language)}catch(_){}translate()});
   translate();
