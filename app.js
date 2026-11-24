@@ -46,6 +46,23 @@
     feedback.textContent = "One answer is correct. Trust what you know.";
   });
 
+
+  const revealMystery = document.getElementById("revealMystery");
+  const mysteryAnswer = document.getElementById("mysteryAnswer");
+  const newMystery = document.getElementById("newMystery");
+  if (revealMystery && mysteryAnswer && newMystery) {
+    revealMystery.addEventListener("click", () => {
+      mysteryAnswer.hidden = false;
+      revealMystery.disabled = true;
+      revealMystery.textContent = "CASE SOLVED ✓";
+    });
+    newMystery.addEventListener("click", () => {
+      mysteryAnswer.hidden = true;
+      revealMystery.disabled = false;
+      revealMystery.textContent = "Reveal the answer ↗";
+    });
+  }
+
   // Check for published changes regularly and refresh open tabs when a new
   // service worker takes control. This keeps visitors on the current release.
   if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
